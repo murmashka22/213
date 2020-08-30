@@ -48,7 +48,7 @@ h2{
     color: #666666;
     .bold;
 }
-/*========================= ШАПКА =========================*/
+/*========================= ШАПКА =========================*//*
 header{
     color: #666666;
     padding-top: 25px;
@@ -71,7 +71,7 @@ header{
 
         a{
 
-            /*тк убрала h3 в header*/
+
             font-size: 28px;
 
 
@@ -84,7 +84,6 @@ header{
             display: inline-block;
             &:before{
                 margin-bottom: -0.5px;
-                /*vertical-align: middle;*/
                 margin-right: 3px;
                 content: '';
                 width: 20px;
@@ -94,15 +93,55 @@ header{
             }
         }
     }
-}
+}*/
 
-/*========================= НАВИГАЦЯ =========================*/
-section.navigation{
-    background-color: #fafdfa;
-    nav {
-        width: 100%;
-        margin-bottom: 0px;
-        a{
+.head{
+    color: #666666;
+    .head-top{
+        padding: 20px 0;
+        background-color: #fff;
+        .descript{
+            .head-top__production{
+                .med;
+                text-transform: uppercase;
+
+            }
+            .head-top__kazan{
+                .light;
+            }
+        }
+        .phone{
+            p{
+            .light;
+            }
+
+            a{
+                font-size: 28px;
+                margin-top: -4px;
+                .med;
+                color: #666666;
+                &:hover {
+                    text-decoration: none;
+                }
+                display: inline-block;
+                &:before{
+                    margin-bottom: -0.5px;
+                    /*vertical-align: middle;*/
+                    margin-right: 3px;
+                    content: '';
+                    width: 20px;
+                    height: 20px;
+                    background: url(../img/icon_phone.png) no-repeat center center;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
+    .head-navigation{
+        background-color: #fafdfa;
+        .head_navigation__item{
+
             .light;
             margin-bottom: 0px;
             display: inline-block;
@@ -119,7 +158,35 @@ section.navigation{
             }
         }
     }
+
 }
+
+
+/*========================= НАВИГАЦЯ =========================
+section.navigation{
+    background-color: #fafdfa;
+    nav {
+        width: 100%;
+        margin-bottom: 0px;
+        a{
+            .light;
+            margin-bottom: 0px;
+            display: inline-block;
+            text-transform: uppercase; /*с большой буквы*/
+/*
+            padding: 20px 10px;
+            color: #666666;
+                -moz-transition: all 0.1s 0.02s ease;
+                -o-transition: all 0.1s 0.02s ease;
+                -webkit-transition: all 0.1s 0.02s ease;
+            &:hover {
+                text-decoration: none;
+                background-color: #67cc67;
+                color: #fff;
+            }
+        }
+    }
+}*/
 
 /*========================= ГЛАВНЫЙ ЭКРАН =========================*/
 section.main{
