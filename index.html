@@ -17,6 +17,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/header.css">
     <!--<link rel="stylesheet/less" href="css/style.less">
     <script src="css/less.min.js"></script>-->
 
@@ -38,45 +39,45 @@
 
     <header class="head">
 
-       <div class="head-top">
+       <div class="head__top">
             <div class="container">
                 <div class="row">
                     <div class="col-md-3">
                         <img src="img/logo.png" alt="Логотип компании" class="logo">
                     </div>
                     <div class="col-md-6 text-center head__descript">
-                        <h3 class="head__descript__title"><span>Производство, продажа и установка жалюзи</span></h3>
-                        <p class="head__descript__subtitle">в Казани и Республике</p>
+                        <h3 class="head__title"><span>Производство, продажа и установка жалюзи</span></h3>
+                        <p class="head__subtitle">в Казани и Республике</p>
                     </div>
 
                     <div class="col-md-3 text-right head__phone">
-                        <a class="head__phone__number" href="tel:+79999999999">8 (999) 999-99-99</a>
-                        <p class="head__phone__work">Режим работы с 9<sup>00</sup> до 18<sup>00</sup></p>
+                        <a class="head__number" href="tel:+79999999999">8 (999) 999-99-99</a>
+                        <p class="head__work">Режим работы с 9<sup>00</sup> до 18<sup>00</sup></p>
                     </div>
                 </div>
             </div>
         </div>
 
-       <div class="head-bottom">
+       <div class="head_bottom">
             <div class="container">
-                <div class="row">
-                    <nav class="head-navigation">
-                        <a class="head-navigation__item" href="#">
+                <div class="row head_navigation">
+                    <nav class="">
+                        <a class="head__item" href="#">
                             Главная
                         </a>
-                        <a class="head-navigation__item" href="#">
+                        <a class="head__item" href="#">
                             Виды жалюзи
                         </a>
-                        <a class="head-navigation__item" href="#">
+                        <a class="head__item" href="#">
                             Наши работы
                         </a>
-                        <a class="head-navigation__item" href="#">
+                        <a class="head__item" href="#">
                             Акция
                         </a>
-                        <a class="head-navigation__item" href="#">
+                        <a class="head__item" href="#">
                             Отзывы
                         </a>
-                        <a class="head-navigation__item" href="#">
+                        <a class="head__item" href="#">
                             Контакты
                         </a>
                     </nav>
@@ -90,17 +91,17 @@
 
     <section class="main" id="main">
         <div class="container">
-            <div class="row main_header">
-                <h1><span>Установим жалюзи в вашей квартире</span><br><span>за 2 часа с полной гарантией</span> <br> <span>и бесплатной доставкой</span></h1>
+            <div class="row">
+                <h1 class="main__title"><span>Установим жалюзи в вашей квартире</span><br><span>за 2 часа с полной гарантией</span> <br> <span>и бесплатной доставкой</span></h1>
             </div>
             <div class="row">
-                <h3>Закажите выезд замерщика на дом. <span>Это бесплатно!</span></h3>
+                <h3 class="main__subtitle">Закажите выезд замерщика на дом. <span>Это бесплатно!</span></h3>
             </div>
 
             <!--Может убрать row? у каждой кнопки же есть id-->
-            <div class="row main_buttons">
-                <button data-toggle="modal" id="get_measurer">Вызвать замерщика</button>
-                <form action="#types"><button id="get_types">Выбрать жалюзи</button></form>
+            <div class="row">
+                <button class="main__btnGetMeasurer" data-toggle="modal" id="get_measurer">Вызвать замерщика</button>
+                <form class="main__btnGetTypes" action="#types"><button id="get_types">Выбрать жалюзи</button></form>
             </div>
         </div>
     </section>
@@ -109,51 +110,54 @@
 
 
     <section class="types" id="types">
+
         <div class="container">
             <h2 class="section_header text-center">Виды жалюзи</h2>
             <div class="row">
                 <!--.col-md-3*4>.card>img.img-responsive.center-block[img/types-$.png]+h4+br+button[data-toggle=modal][href=#]*2-->
+
+
                 <div class="col-md-3">
                     <div class="card">
                         <img src="img/types-1.jpg" alt="Горизонтальные жалюзи" class="img-responsive center-block">
-                        <p>Горизонтальные жалюзи</p>
+                        <p class="card__title">Горизонтальные жалюзи</p>
                         <br>
                         <div>
-                            <button class="more_btn"  data-toggle="modal" href="#">Подробнее</button>
-                            <button class="offer_btn" data-toggle="modal" href="#">Заказать</button>
+                            <button class="card__btnMore"  data-toggle="modal" href="#">Подробнее</button>
+                            <button class="card__btnOffer" data-toggle="modal" href="#">Заказать</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card">
                         <img src="img/types-2.jpg" alt="Вертикальные жалюзи" class="img-responsive center-block">
-                        <p>Вертикальные жалюзи</p>
+                        <p class="card__title">Вертикальные жалюзи</p>
                         <br>
                         <div>
-                            <button class="more_btn" data-toggle="modal" href="#">Подробнее</button>
-                            <button class="offer_btn" data-toggle="modal" href="#">Заказать</button>
+                            <button class="card__btnMore" data-toggle="modal" href="#">Подробнее</button>
+                            <button class="card__btnOffer" data-toggle="modal" href="#">Заказать</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card">
                         <img src="img/types-3.jpg" alt="Рулонные жалюзи" class="img-responsive center-block">
-                        <p>Рулонные жалюзи</p>
+                        <p class="card__title">Рулонные жалюзи</p>
                         <br>
                         <div>
-                            <button class="more_btn" data-toggle="modal" href="#">Подробнее</button>
-                            <button class="offer_btn" data-toggle="modal" href="#">Заказать</button>
+                            <button class="card__btnMore" data-toggle="modal" href="#">Подробнее</button>
+                            <button class="card__btnOffer" data-toggle="modal" href="#">Заказать</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="card">
                         <img src="img/types-4.jpg" alt="Жалюзи плиссе" class="img-responsive center-block">
-                        <p>Жалюзи плиссе</p>
+                        <p class="card__title">Жалюзи плиссе</p>
                         <br>
                         <div>
-                            <button class="more_btn" data-toggle="modal" href="#">Подробнее</button>
-                            <button class="offer_btn" data-toggle="modal" href="#">Заказать</button>
+                            <button class="card__btnMore" data-toggle="modal" href="#">Подробнее</button>
+                            <button class="card__btnOffer" data-toggle="modal" href="#">Заказать</button>
                         </div>
                     </div>
                 </div>
@@ -166,10 +170,10 @@
             <div class="row justify-content-center">
               <!--col-md-offset-2-->
                 <div class=" col-md-6">
-                    <h3>Не знаете какие жалюзи выбрать?</h3>
-                    <p>Оставьте заявку на консультацию и наш специалист подробно ответит <br>
+                    <h3 class="help__uncertainty">Не знаете какие жалюзи выбрать?</h3>
+                    <p class="help__consultation">Оставьте заявку на консультацию и наш специалист подробно ответит <br>
                     на все Ваши вопросы. Это бесплатно.</p>
-                    <button class="consultation_btn" data-toggle="modal" href="#">Бесплатная консультация</button>
+                    <button class="help__btnConsultation" data-toggle="modal" href="#">Бесплатная консультация</button>
                 </div>
 
                 <div class="col-md-2">

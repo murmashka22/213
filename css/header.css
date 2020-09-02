@@ -1,0 +1,67 @@
+.head{
+    color: #666666;
+}
+
+.head__top{
+    padding: 20px 0;
+    background-color: #fff;
+}
+
+.head__title{
+    /*.med;*/
+    text-transform: uppercase;
+}
+
+.head__subtitle, head__work{
+    /*.light;*/
+}
+
+.head__number{
+    font-size: 28px;
+    margin-top: -4px;
+    .med;
+    color: #666666;
+    display: inline-block;
+
+}
+
+.head__number:hover{
+    text-decoration: none;
+    color: #6666660;
+}
+
+.head__number:before{
+    margin-bottom: -0.5px;
+    /*vertical-align: middle;*/
+    margin-right: 3px;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: url(../img/icon_phone.png) no-repeat center center;
+    display: inline-block;
+}
+
+
+
+.head_bottom{
+    background-color: #fafdfa;
+}
+
+
+.head__item{
+    .light;
+    margin-bottom: 0px;
+    display: inline-block;
+    text-transform: uppercase; /*с большой буквы*/
+    padding: 20px 10px;
+    color: #666666;
+        -moz-transition: all 0.1s 0.02s ease;
+        -o-transition: all 0.1s 0.02s ease;
+        -webkit-transition: all 0.1s 0.02s ease;
+}
+
+.head__item:hover {
+        text-decoration: none;
+        background-color: #67cc67;
+        color: #fff;
+    }
