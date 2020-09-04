@@ -1,0 +1,53 @@
+
+section.types{
+    padding-top: 60px;
+}
+
+.card__title{
+    font-size: 20px;
+    .med;
+    margin-top: 30px;
+    text-transform: uppercase;
+    color: #666666;
+    text-align: center;
+}
+
+.card__btn{
+    border: none;
+    color: #66cc66;
+    border: 2px solid #66cc66;
+    width: 110px;
+    padding: 10px 0;
+    .bold;
+    text-transform: uppercase;
+        background-color: transparent;
+        -moz-transition: all 0.1s 0.02s ease;
+        -o-transition: all 0.1s 0.02s ease;
+        -webkit-transition: all 0.1s 0.02s ease;
+}
+
+.card__btn_More:hover{
+    background-color: #66cc66;
+    color: #fff;
+}
+
+.card__btn_Offer:hover{
+    background-color: #66cc66;
+    color: #fff;
+}
+
+.card__btn_Offer{
+    float: right;
+}
+
+.card{
+        -moz-transition: all 0.1s 0.02s ease;
+        -o-transition: all 0.1s 0.02s ease;
+        -webkit-transition: all 0.1s 0.02s ease;
+    padding: 5px;
+    border: 2px solid transparent;
+}
+.card:hover{
+    background-color: #fafdfa;
+    border: 2px solid #b2e5b2;
+}

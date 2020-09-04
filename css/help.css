@@ -1,0 +1,34 @@
+.help{
+   padding-top: 80px;
+}
+
+.help__title{
+    text-transform: uppercase;
+    color: #ff9933;
+    .bold;
+}
+
+.help__subtitle{
+    color: #666666;
+    font-size: 18px;
+    .light;
+}
+
+.help__btnConsultation{
+    border: none;
+    color: #ff9933;
+    border: 2px solid #ff9933;
+    padding: 15px 33px;
+    .bold;
+    text-transform: uppercase;
+    background-color: transparent;
+        -moz-transition: all 0.1s 0.02s ease;
+        -o-transition: all 0.1s 0.02s ease;
+        -webkit-transition: all 0.1s 0.02s ease;
+
+}
+
+.help__btnConsultation:hover{
+    background-color: #ff9933;
+    color: #fff;
+}

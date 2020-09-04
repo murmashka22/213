@@ -1,0 +1,64 @@
+.offer{
+    margin-top: 85px;
+    margin-bottom: 30px;
+}
+
+.offer__title{
+    text-transform: uppercase;
+    color: #ff9933;
+    .bold;
+    font-weight: bolder;
+}
+
+.offer__subtitle{
+    color: #666666;
+    font-size: 22px;
+    .light;
+}
+
+.offer__btnBuy{
+    border: none;
+    color: #fff;
+    border: 2px solid #ff9933;
+    padding: 15px 33px;
+    .bold;
+    text-transform: uppercase;
+    background-color: #ff9933;
+        -moz-transition: all 0.1s 0.02s ease;
+        -o-transition: all 0.1s 0.02s ease;
+        -webkit-transition: all 0.1s 0.02s ease;
+}
+
+.offer__btnBuy:hover{
+    background-color: transparent;
+    color: #ff9933;
+}
+
+.offer__form{
+    input[name="name"]{
+        background: url(../img/logo_name.png) no-repeat center left 5px;
+        padding: 28px;
+        border-radius: 0;
+        padding-left: 30px;
+        border: solid 1px #cccccc;
+        .light;
+        opacity: 0.55;
+        &:hover
+        &:focus{
+            opacity: 1;
+        }
+    }
+    input[name="phone"]{
+        background: url(../img/logo_phone.png) no-repeat center left 5px;
+        padding: 28px;
+        border-radius: 0;
+        padding-left: 30px;
+        border: solid 1px #cccccc;
+        .light;
+        opacity: 0.55;
+        &:hover
+        &:focus{
+            opacity: 1;
+        }
+    }
+}

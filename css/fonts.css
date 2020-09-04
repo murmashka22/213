@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'PFDINTEXTCONDPRO-MEDIUM';
+    src: url('fonts/PFDINTEXTCONDPRO-MEDIUM.eot');
+    src: local('☺'), url('fonts/PFDINTEXTCONDPRO-MEDIUM.woff') format('woff'), url('fonts/PFDINTEXTCONDPRO-MEDIUM.ttf') format('truetype'), url('fonts/PFDINTEXTCONDPRO-MEDIUM.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'PFDINTEXTCONDPRO-LIGHT';
+    src: url('fonts/PFDINTEXTCONDPRO-LIGHT.eot');
+    src: local('☺'), url('fonts/PFDINTEXTCONDPRO-LIGHT.woff') format('woff'), url('fonts/PFDINTEXTCONDPRO-LIGHT.ttf') format('truetype'), url('fonts/PFDINTEXTCONDPRO-LIGHT.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'PFDINTEXTCONDPRO-BOLD';
+    src: url('fonts/PFDINTEXTCONDPRO-BOLD.eot');
+    src: local('☺'), url('fonts/PFDINTEXTCONDPRO-BOLD.woff') format('woff'), url('fonts/PFDINTEXTCONDPRO-BOLD.ttf') format('truetype'), url('fonts/PFDINTEXTCONDPRO-BOLD.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

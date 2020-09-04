@@ -15,9 +15,21 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style1.css">
+    <!--<link rel="stylesheet" href="css/style.css">-->
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/types.css">
+    <link rel="stylesheet" href="css/help.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/offer.css">
+    <link rel="stylesheet" href="css/feedback.css">
     <!--<link rel="stylesheet/less" href="css/style.less">
     <script src="css/less.min.js"></script>-->
 
@@ -28,11 +40,11 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Fotorama from CDNJS, 19 KB -->
-    <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+<!--    <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>-->
+
+
   </head>
 
 <body>
@@ -100,8 +112,8 @@
 
             <!--Может убрать row? у каждой кнопки же есть id-->
             <div class="row">
-                <button class="main__btnGetMeasurer" data-toggle="modal" id="get_measurer">Вызвать замерщика</button>
-                <form class="main__btnGetTypes" action="#types"><button id="get_types">Выбрать жалюзи</button></form>
+                <button class="main__btn main__btn_GetMeasurer" data-toggle="modal" id="get_measurer">Вызвать замерщика</button>
+                <button class="main__btn main__btn_GetTypes"  id="get_types">Выбрать жалюзи</button>
             </div>
         </div>
     </section>
@@ -110,7 +122,6 @@
 
 
     <section class="types" id="types">
-
         <div class="container">
             <h2 class="section_header text-center">Виды жалюзи</h2>
             <div class="row">
@@ -123,8 +134,8 @@
                         <p class="card__title">Горизонтальные жалюзи</p>
                         <br>
                         <div>
-                            <button class="card__btnMore"  data-toggle="modal" href="#">Подробнее</button>
-                            <button class="card__btnOffer" data-toggle="modal" href="#">Заказать</button>
+                            <button class="card__btn card__btn_More"  data-toggle="modal" >Подробнее</button>
+                            <button class="card__btn card__btn_Offer" data-toggle="modal" >Заказать</button>
                         </div>
                     </div>
                 </div>
@@ -134,8 +145,8 @@
                         <p class="card__title">Вертикальные жалюзи</p>
                         <br>
                         <div>
-                            <button class="card__btnMore" data-toggle="modal" href="#">Подробнее</button>
-                            <button class="card__btnOffer" data-toggle="modal" href="#">Заказать</button>
+                            <button class="card__btn card__btn_More" data-toggle="modal" >Подробнее</button>
+                            <button class="card__btn card__btn_Offer" data-toggle="modal" >Заказать</button>
                         </div>
                     </div>
                 </div>
@@ -145,8 +156,8 @@
                         <p class="card__title">Рулонные жалюзи</p>
                         <br>
                         <div>
-                            <button class="card__btnMore" data-toggle="modal" href="#">Подробнее</button>
-                            <button class="card__btnOffer" data-toggle="modal" href="#">Заказать</button>
+                            <button class="card__btn card__btn_More" data-toggle="modal" >Подробнее</button>
+                            <button class="card__btn card__btn_Offer" data-toggle="modal" >Заказать</button>
                         </div>
                     </div>
                 </div>
@@ -156,8 +167,8 @@
                         <p class="card__title">Жалюзи плиссе</p>
                         <br>
                         <div>
-                            <button class="card__btnMore" data-toggle="modal" href="#">Подробнее</button>
-                            <button class="card__btnOffer" data-toggle="modal" href="#">Заказать</button>
+                            <button class="card__btn card__btn_More" data-toggle="modal" >Подробнее</button>
+                            <button class="card__btn card__btn_Offer" data-toggle="modal" >Заказать</button>
                         </div>
                     </div>
                 </div>
@@ -170,10 +181,10 @@
             <div class="row justify-content-center">
               <!--col-md-offset-2-->
                 <div class=" col-md-6">
-                    <h3 class="help__uncertainty">Не знаете какие жалюзи выбрать?</h3>
-                    <p class="help__consultation">Оставьте заявку на консультацию и наш специалист подробно ответит <br>
+                    <h3 class="help__title">Не знаете какие жалюзи выбрать?</h3>
+                    <p class="help__subtitle">Оставьте заявку на консультацию и наш специалист подробно ответит <br>
                     на все Ваши вопросы. Это бесплатно.</p>
-                    <button class="help__btnConsultation" data-toggle="modal" href="#">Бесплатная консультация</button>
+                    <button class="help__btnConsultation" data-toggle="modal">Бесплатная консультация</button>
                 </div>
 
                 <div class="col-md-2">
@@ -188,18 +199,19 @@
         <div class="container">
             <h2 class="section_header text-center">Наши работы</h2>
             <div class="row">
-                <div class="slider">
-                    <div class="fotorama" data-nav="thumbs">
-                        <img src="img/portfolio1.jpg" alt="">
-                        <img src="img/portfolio2.jpg" alt="">
-                        <img src="img/portfolio3.jpg" alt="">
-                        <img src="img/portfolio4.jpg" alt="">
-                        <img src="img/portfolio5.jpg" alt="">
-                    </div>
+               <div class="col-12">
+                <div class="portfolio__slider">
+                    <img src="img/portfolio1.jpg" alt="">
+                    <img src="img/portfolio2.jpg" alt="">
+                    <img src="img/portfolio3.jpg" alt="">
+                    <img src="img/portfolio4.jpg" alt="">
+                    <img src="img/portfolio5.jpg" alt="">
+                </div>
                 </div>
             </div>
         </div>
     </section>
+
 
     <section class="offer" id="offer">
         <div class="container">
@@ -208,12 +220,12 @@
                     <img src="img/gift.png" alt="Подарок" class="img-responsive center-block gift">
                 </div>
                 <div class="col-md-9">
-                    <h3>Акция</h3>
+                    <h3 class="offer__title" id="action">Акция</h3>
 
                     <br>
-                    <h3>Закажите установку жалюзи до 29.06.2016</h3>
-                    <p>И получите в подарок москитную сетку для окна.</p>
-                        <form action="#">
+                    <h3 class="offer__title">Закажите установку жалюзи до 29.06.2016</h3>
+                    <p class="offer__subtitle">И получите в подарок москитную сетку для окна.</p>
+                        <form class="offer__form" action="#">
                             <div class="row">
                                 <div class="col-md-4">
                                     <input name="name" type="text" required placeholder="Имя..." class="form-control form-input">
@@ -222,7 +234,7 @@
                                     <input name="phone" type="text" required placeholder="Телефон..." class="form-control form-input">
                                 </div>
                                 <div class="col-md-4">
-                                    <button class="buy_btn" type="submit">Заказать жалюзи</button>
+                                    <button class="offer__btnBuy" type="submit">Заказать жалюзи</button>
                                 </div>
                             </div>
                         </form>
@@ -241,7 +253,7 @@
                         <ol class="carousel-indicators">
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            <li cl data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                         </ol>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -259,8 +271,8 @@
                                                     <img src="img/foto1.png" alt="" class="rounded-circle center-block">
                                                 </div>
                                                 <div class="col-md-10">
-                                                    <h5>Марина Забелина</h5>
-                                                    <a href="#">vk.com/123658</a>
+                                                    <p class="feedback__Fullname">Марина Забелина</p> <!--раньше был h5-->
+                                                    <a class="feedback__VK" href="#">vk.com/123658</a>
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -271,7 +283,7 @@
                                                 </div>
                                             </div>
                                             <div class="row">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam facere a qui commodi, nesciunt architecto distinctio debitis cupiditate quo ab non, voluptatem ipsa consectetur maiores eos, ea fuga porro earum atque quasi accusantium perferendis. Eveniet distinctio pariatur quas repudiandae minima velit, porro, iusto et quo hic atque quos beatae est?
+                                                <p class="feedback__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam facere a qui commodi, nesciunt architecto distinctio debitis cupiditate quo ab non, voluptatem ipsa consectetur maiores eos, ea fuga porro earum atque quasi accusantium perferendis. Eveniet distinctio pariatur quas repudiandae minima velit, porro, iusto et quo hic atque quos beatae est?
                                                 </p>
                                             </div>
                                         </div>
@@ -292,8 +304,8 @@
                                                 <img src="img/avatar-1.jpg" alt="" class="img-circle center-block">
                                             </div>
                                             <div class="col-md-10">
-                                                <h5>Иван Ручкин</h5>
-                                                <a href="#">vk.com/123658</a>
+                                                <p class="feedback__Fullname">Иван Ручкин<p>
+                                                <a class="feedback__VK" href="#">vk.com/123658</a>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -302,7 +314,7 @@
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <p>
+                                            <p class="feedback__subtitle">
                                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam facere a qui commodi, nesciunt architecto distinctio debitis cupiditate quo ab non, voluptatem ipsa consectetur maiores eos, ea fuga porro earum atque quasi accusantium perferendis. Eveniet distinctio pariatur quas repudiandae minima velit, porro, iusto et quo hic atque quos beatae est?
                                             </p>
                                         </div>
@@ -324,8 +336,8 @@
                                                 <img src="img/avatar-1.jpg" alt="" class="img-circle center-block">
                                             </div>
                                             <div class="col-md-10">
-                                                <h5>Алексей Иванов</h5>
-                                                <a href="#">vk.com/123658</a>
+                                                <p class="feedback__Fullname">Алексей Иванов<p>
+                                                <a class="feedback__VK" href="#">vk.com/123658</a>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -334,7 +346,7 @@
                                             </div>
                                         </div>
                                         <div class="row">
-                                        <p>
+                                        <p class="feedback__subtitle">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam facere a qui commodi, nesciunt architecto distinctio debitis cupiditate quo ab non, voluptatem ipsa consectetur maiores eos, ea fuga porro earum atque quasi accusantium perferendis. Eveniet distinctio pariatur quas repudiandae minima velit, porro, iusto et quo hic atque quos beatae est?
                                         </p>
                                         </div>
@@ -356,11 +368,11 @@
         </div>
    </section>
 
-    <footer class="contacts" id="contacts">
+    <footer class="footer" id="contacts">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="map">
+                    <div class="footer__map">
                         <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A59f082d8a9b36d1bbb4e856a3d03d8666c3dd796b177389923f0caa71148738e&amp;width=490&amp;height=330&amp;lang=ru_RU&amp;scroll=true"></script>
                     </div>
                 </div>
@@ -386,7 +398,7 @@
                     <div class="row">
                         <a class="vk" href=""><img src="img/vk.png" alt="Вконтакте"></a>
                         <a class="instagram" href=""><img src="img/instagram.png" alt="Инстаграм"></a>
-                        <button class="question_btn" data-toggle="modal" href="">Задать вопрос</button>
+                        <button class="question_btn" data-toggle="modal">Задать вопрос</button>
                     </div>
                 </div>
             </div>
@@ -436,14 +448,8 @@
     <script>
       new WOW().init();
     </script>
-    <script>
-      $(document).ready(
-          function() {
-              $("html").niceScroll({cursorcolor:"#000"});
-          }
-      );
-    </script>
 
-
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/js.js"></script>
 </body>
 </html>
