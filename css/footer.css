@@ -1,0 +1,148 @@
+.footer{
+    margin-top: 100px;
+    background-color: #666666;
+    padding-top: 80px;
+    padding-bottom: 10px;
+}
+
+.footer__header{
+    color: #ffffff;
+    .bold;
+    text-transform: uppercase;
+    margin-left: -16px;
+}
+
+
+
+footer{
+/*
+    margin-top: 100px;
+    background-color: #666666;
+    padding-top: 80px;
+    padding-bottom: 10px;
+    h2{
+        color: #ffffff;
+        .bold;
+        text-transform: uppercase;
+        margin-left: -16px;
+    }
+*/
+
+    address, .phone_footer{
+        margin-left: -17px;
+    }
+    p#addres, p#phone_footer {
+        margin-bottom: 2px;
+        color: #cccccc;
+        font-size: 16px;
+        text-transform: uppercase;
+        .light;
+    }
+    p#Kazan, p#number{
+        color: #fff;
+        font-size: 23px;
+        .light;
+    }
+    address{
+        p#addres{
+            &:before{
+                content: '';
+                height: 9px;
+                width: 7px;
+                background: url(../img/geoposition.png) no-repeat center center;
+                display: inline-block;
+                vertical-align: middle;
+                margin-bottom: 6px;
+            }
+        }
+    }
+
+    .phone_footer{
+        p#phone_footer{
+            &:before{
+                content: '';
+                height: 9px;
+                width: 7px;
+                background: url(../img/footer_phone.png) no-repeat center center;
+                display: inline-block;
+                vertical-align: middle;
+                margin-bottom: 6px;
+            }
+        }
+    }
+
+    button.question_btn{
+        font-size: 18px;
+        border: none;
+        color: #fff;
+        border: 2px solid #fff;
+        padding: 8px 60px;
+        .bold;
+        text-transform: uppercase;
+        background-color: transparent;
+        -moz-transition: all 0.1s 0.02s ease;
+        -o-transition: all 0.1s 0.02s ease;
+        -webkit-transition: all 0.1s 0.02s ease;
+        &:hover{
+            background-color: #fff;
+            color: #666666;
+        }
+    }
+
+    a.instagram{
+        padding-left: 15px;
+        padding-right: 40px;
+        padding-top: 5px;
+        opacity: 0.5;
+        &:hover{
+            opacity: 1;
+        }
+    }
+
+    a.vk{
+        padding-top: 5px;
+        opacity: 0.5;
+        &:hover{
+            opacity: 1;
+        }
+    }
+
+    .details, .policy, .pochinok{
+        margin-top: 70px;
+
+    }
+
+    h5{
+        color: #fff;
+        .med;
+    }
+
+    p{
+        color: #cccccc;
+        .light;
+        font-size: 15px;
+    }
+
+    .policy{
+        text-align: center;
+        a{
+            color: #cccccc;
+            .light;
+            font-size: 20px;
+        }
+    }
+
+
+    .pochinok{
+        text-align: right;
+        h5{
+            color: #fff;
+            .bold;
+            text-transform: uppercase;
+        }
+        a{
+            color: aqua;
+            .med;
+        }
+    }
+}

@@ -16,23 +16,27 @@
     .light;
 }
 
+
+
+
 .offer__btnBuy{
     border: none;
     color: #fff;
     border: 2px solid #ff9933;
-    padding: 15px 33px;
+    padding: 9px 33px;
     .bold;
     text-transform: uppercase;
     background-color: #ff9933;
-        -moz-transition: all 0.1s 0.02s ease;
+    /*    -moz-transition: all 0.1s 0.02s ease;
         -o-transition: all 0.1s 0.02s ease;
-        -webkit-transition: all 0.1s 0.02s ease;
+        -webkit-transition: all 0.1s 0.02s ease;*/
 }
-
-.offer__btnBuy:hover{
+/*.
+..offer__btnBuy:hover{
     background-color: transparent;
     color: #ff9933;
-}
+}*/
+
 
 .offer__form{
     input[name="name"]{
@@ -62,3 +66,54 @@
         }
     }
 }
+
+
+.offer__btnBuy {
+  border: none;
+  border-bottom: 2px solid #000;
+  border-left: 2px solid #000;
+}
+.offer__btnBuy:before,
+.offer__btnBuy:after {
+  position: absolute;
+  content: "";
+
+
+
+
+  right: 140px;
+
+
+
+  top: 0;
+  background: #000;
+  transition: all 0.3s ease;
+}
+.offer__btnBuy:before {
+  height: 0%;
+  width: 2px;
+}
+.offer__btnBuy:after {
+  width: 0%;
+  height: 2px;
+}
+.offer__btnBuy:hover:before {
+  height: 100%;
+}
+.offer__btnBuy:hover:after {
+
+
+
+
+
+  width: 45%;
+
+
+
+
+
+}
+
+
+
+/*https://nisnom.com/veb-razrabotki/prichudlivye-knopki-s-krasivymi-hover-effektami/#more-630*/
