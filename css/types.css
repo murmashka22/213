@@ -51,3 +51,33 @@ section.types{
     background-color: #fafdfa;
     border: 2px solid #b2e5b2;
 }
+
+
+
+@media (max-width:1180px){
+    .container{
+        max-width: 800px;
+    }
+
+    .img-responsive{
+        width: 160px;
+        height: 145px;
+    }
+
+    .card__btn{
+    font-size: 10px;
+    border: none;
+    color: #66cc66;
+    border: 2px solid #66cc66;
+    width: 100px;
+    padding: 10px 0;
+    .bold;
+    text-transform: uppercase;
+        background-color: transparent;
+        -moz-transition: all 0.1s 0.02s ease;
+        -o-transition: all 0.1s 0.02s ease;
+        -webkit-transition: all 0.1s 0.02s ease;
+    }
+}
+
+

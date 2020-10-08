@@ -65,3 +65,40 @@
         background-color: #67cc67;
         color: #fff;
     }
+
+@media (max-width:1180px){
+    .container{
+        max-width: 800px;
+    }
+
+    .head__number{
+    font-size: 20px;
+    margin-top: -4px;
+    .med;
+    color: #666666;
+    display: inline-block;
+    }
+
+    .head__number:before{
+    margin-bottom: -3px;
+    /*vertical-align: middle;*/
+    margin-right: 3px;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: url(../img/icon_phone.png) no-repeat center center;
+    display: inline-block;
+    }
+}
+
+@media (max-width:992px){
+    .container{
+        max-width: 750px;
+    }
+}
+
+@media (max-width:768px){
+    .container{
+        max-width: none;
+    }
+}
