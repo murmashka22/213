@@ -41,3 +41,18 @@
 .carousel-item .active{
     background-color: #ff9933;
 }
+
+@media (max-width:1180px){
+    .container{
+        max-width: 800px;
+    }
+
+    .fotorama__img{
+        width: 100%;
+    }
+
+    .rounded-circle{
+        width: 100%;
+    }
+
+}

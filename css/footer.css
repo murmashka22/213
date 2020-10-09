@@ -105,3 +105,15 @@
     .light;
     font-size: 15px;
 }
+
+
+@media (max-width:1180px){
+    .container{
+        max-width: 800px;
+    }
+
+    .footer__map{
+        width: 100%;
+    }
+
+}
