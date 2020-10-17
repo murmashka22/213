@@ -45,6 +45,10 @@
 
 .head_bottom{
     background-color: #fafdfa;
+    /*зафикс меню*/
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
 }
 
 
@@ -66,7 +70,13 @@
         color: #fff;
     }
 
-@media (max-width:1180px){
+.head_menu{
+    display: none;
+}
+
+
+
+@media (max-width:1200px){
     .container{
         max-width: 800px;
     }
@@ -95,10 +105,62 @@
     .container{
         max-width: 750px;
     }
+
+    .head_bottom{
+        position: relative;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .head_menu{
+        position: absolute;
+        display: block;
+        width: 30px;
+        height: 5px;
+        background-color: aqua;
+    }
+
+    .head_menu::before{
+        position: absolute;
+        left: 0;
+        top: 10px;
+        content: '';
+        width: 30px;
+        height: 5px;
+        background-color: red;
+        display: block;
+    }
+
+    .head_menu::after{
+        position: absolute;
+        left: 0;
+        top: 20px;
+        content: '';
+        width: 30px;
+        height: 5px;
+        background-color: green;
+        display: block;
+    }
+/*
+    .head_menu.head_menu-active{
+        background-color: transparent;
+    }*/
+
 }
 
 @media (max-width:768px){
     .container{
         max-width: none;
     }
+
+
+}
+
+@media (max-width:576px){
+    .container{
+        max-width: none;
+    }
+
 }
